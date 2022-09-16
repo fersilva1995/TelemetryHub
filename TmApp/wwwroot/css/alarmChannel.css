@@ -1,0 +1,63 @@
+﻿.formAlert {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    align-items: baseline;
+}
+
+.label-alert {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.form-control.inputPort {
+    width: 100px;
+}
+
+.form-control.inputEmailPassword {
+    width: 150px;
+}
+
+.form-control.inputDestiny {
+    width: 300px; 
+}
+
+.form-control.inputPhone {
+    width: 300px;
+}
+
+.alarmBtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+#smsChecker {
+    margin-left: -85px;
+}
+
+#saveButton {
+    margin: 0 1.5em;
+}
+
+@media(max-width: 830px) {
+    .formAlert {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1em;
+    }
+
+    .label-alert {
+        margin-bottom: 0.5em;
+        margin-left: 1em;
+    }
+
+    .form-control.inputPort, .form-control.inputEmailPassword,
+    .form-control.inputDestiny, .form-control.inputPhone  {
+        width: 95%;
+    }
+
+    #smsChecker {
+        margin-left: 15px;
+    }
+}

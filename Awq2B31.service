@@ -1,0 +1,14 @@
+[Unit]
+Description=Awq2B31 telemetryDecoder
+
+[Service]
+WorkingDirectory=/home/tm/VFinal/TmDecoder
+ExecStart=/snap/dotnet-sdk/current/dotnet /home/tm/VFinal/TmDecoder/TelemetryDecoder.dll 34 localhost TmhubServer
+Restart=always
+RestartSec=10 # Restart service after 10 seconds if dotnet service crashes
+SyslogIdentifier=offershare-web-app
+Environment=ASPNETCORE_ENVIRONMENT=Production
+
+[Install]
+WantedBy=multi-user.target
+

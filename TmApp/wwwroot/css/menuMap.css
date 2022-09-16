@@ -1,0 +1,61 @@
+﻿menu {
+    background-color: inherit;
+    border: 1px solid;
+    font-weight: normal;
+    height: 25px;
+    width: 25px;
+    padding-left: 4px;
+    margin: 0;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+    menu:hover {
+        background-color: foreground-color;
+        font-weight: 500;
+    }
+
+    menu > menu {
+        display: none;
+        height: 30px;
+        width: 130px;
+        margin-left: 0px;
+        padding-left: 2px;
+        position: relative;
+        top: -25px;
+        left: 100%;
+    }
+
+    menu:hover > menu {
+        display: block;
+    }
+
+.checkedLayer {
+    background-color: white;
+    color: black;
+}
+
+.uncheckedLayer {
+    background-color: darkgrey;
+    color: black;
+}
+
+
+menu[title]:before {
+    content: attr(title);
+}
+
+menu:not([title]):before {
+    content: "\2630";
+}
+
+.checkedLayer[title]:after {
+    transition: 1s ease-in;
+    content: '\1F5F8';
+}
+
+#ctxMenu {
+    display: none;
+    z-index: 100;
+}

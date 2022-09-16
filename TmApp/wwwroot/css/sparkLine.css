@@ -1,0 +1,128 @@
+﻿.graphComponentHeader {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 12px;
+}
+
+.graphTitle {
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.graphComponentChanger {
+    text-align: end;
+}
+
+.graphIcons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    margin: 65px 4px;
+}
+
+.graphMaxValue {
+    position: relative;
+    top: 20px;
+    left: 44px;
+}
+
+.divForChart {
+    margin-bottom: -60px;
+    padding-left: 25px;
+}
+
+.containerProperties {
+    position: sticky;
+    height: 100%;
+    width: 100%;
+    margin: -20px -5px;
+}
+
+.graphMinValue {
+    position: relative;
+    left: 44px;
+    top: 33px;
+}
+
+.divSparkline {
+    height: 300px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+/*.ct-chart svg {
+    margin: 1px;
+    vertical-align: text-bottom;
+}*/
+
+.ct-series-a .ct-line,
+.ct-series-a .ct-bar {
+    stroke: red;
+    stroke-width: 1px;
+}
+
+.ct-chart-pie .ct-label {
+    display: none;
+}
+
+.sparkline {
+    float: left;
+    height: 1em;
+    margin: 0 0.5em;
+}
+
+.sparkline .index {
+    position: relative;
+    float: left;
+    width: 2px;
+    height: 1em;
+}
+
+.sparkline .index {
+    position: relative;
+    float: left;
+    width: 2px;
+    height: 1em;
+}
+
+
+.tableOnTable {
+    background-color: black;
+    height: 200px;
+}
+
+
+/*html, body, #container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}*/
+
+.anychart-credits-text {
+    display: none;
+}
+
+.currentValueAtributes {
+    text-align: center;
+    font-size: 1.3rem;
+    position: relative;
+    height: 5px;
+}
+
+text[text-anchor="middle"] {
+    display: none;
+}
+
+
+#demandGraph {
+    margin-left: 4%;
+    height: 100%;
+}
+
+.graphHeaderOffDashboard {
+    position: relative;
+    top: -77px;
+}

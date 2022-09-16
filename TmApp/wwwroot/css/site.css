@@ -1,0 +1,903 @@
+* {
+    transition: color .2s linear;
+}
+
+html::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 9px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: rgb(36, 33, 34);
+    border: 2px solid rgb(36, 33, 34);
+}
+
+body {
+    min-height: 100%;
+}
+
+#menu {
+    overflow-x: hidden;
+}
+
+@media (max-width: 425px) {
+    #menu {
+        height: inherit;
+        min-height: 100%;
+        position: absolute;
+        top: 0;
+    }
+}
+
+.hiddenItem {
+    line-height: 2;
+    color: #343a40;
+}
+
+.form-control {
+    border-radius: 0;
+    box-shadow: none;
+    border-color: #d2d6de;
+}
+
+
+.hiddenvalue {
+    display: none;
+}
+
+
+.box {
+    position: relative;
+    border-radius: 3px;
+    background: #ffffff;
+    border-top: 3px solid #d2d6de;
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.box-body {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 10px;
+}
+
+.box-header {
+    color: #444;
+    display: block;
+    padding: 10px;
+    position: relative;
+}
+
+
+td, th {
+    padding: 5px
+}
+
+.btn {
+    width: 30%;
+    max-width: 200px;
+    background-color: dodgerblue;
+    text-align: center;
+    color: white;
+}
+
+
+.btnNewTelemetry {
+    width: 30%;
+    max-width: 200px;
+    background-color: dodgerblue;
+    text-align: center;
+    color: white;
+    float: right;
+    margin-right: 5%;
+    margin-bottom: 2%;
+}
+
+#topMenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-nav.itemHead {
+    display: flex;
+    align-items: baseline;
+}
+
+.fas.fa-bars {
+    margin-right: 10px;
+}
+
+.userActive {
+    width: 100%;
+}
+
+#username {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+
+select,
+textarea {
+}
+
+.edit-btn {
+    background: url('../Images/pencil.png') no-repeat center right;
+    display: block; /*change width and height as per your need*/
+    width: 50px;
+    height: 50px; /* hides the link text */
+    text-indent: -9999px;
+}
+
+.details-btn {
+    background: url('../Images/details.png') no-repeat center right;
+    display: block; /*change width and height as per your need*/
+    width: 50px;
+    height: 50px; /* hides the link text */
+    text-indent: -9999px;
+}
+
+.remove-btn {
+    background: url('../Images/lixo.png') no-repeat center right;
+    display: block; /*change width and height as per your need*/
+    width: 50px;
+    height: 50px; /* hides the link text */
+    text-indent: -9999px;
+}
+
+.pageTitle {
+    padding-left: 2%;
+    margin-top: 7px;
+}
+
+.led-box {
+    width: 25%;
+    margin: 3%;
+    float: left;
+}
+
+    .led-box p {
+        font-size: 12px;
+        text-align: center;
+        margin: 1em;
+    }
+
+.led-red {
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+    background-color: #F00;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;
+    -webkit-animation: blinkRed 0.5s infinite;
+    -moz-animation: blinkRed 0.5s infinite;
+    -ms-animation: blinkRed 0.5s infinite;
+    -o-animation: blinkRed 0.5s infinite;
+    animation: blinkRed 0.5s infinite;
+}
+
+@-webkit-keyframes blinkRed {
+    from {
+        background-color: #F00;
+    }
+
+    50% {
+        background-color: #A00;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;
+    }
+
+    to {
+        background-color: #F00;
+    }
+}
+
+@-moz-keyframes blinkRed {
+    from {
+        background-color: #F00;
+    }
+
+    50% {
+        background-color: #A00;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;
+    }
+
+    to {
+        background-color: #F00;
+    }
+}
+
+@-ms-keyframes blinkRed {
+    from {
+        background-color: #F00;
+    }
+
+    50% {
+        background-color: #A00;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;
+    }
+
+    to {
+        background-color: #F00;
+    }
+}
+
+@-o-keyframes blinkRed {
+    from {
+        background-color: #F00;
+    }
+
+    50% {
+        background-color: #A00;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;
+    }
+
+    to {
+        background-color: #F00;
+    }
+}
+
+@keyframes blinkRed {
+    from {
+        background-color: #F00;
+    }
+
+    50% {
+        background-color: #A00;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 0;
+    }
+
+    to {
+        background-color: #F00;
+    }
+}
+
+.led-yellow {
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+    background-color: #FF0;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 12px;
+    -webkit-animation: blinkYellow 1s infinite;
+    -moz-animation: blinkYellow 1s infinite;
+    -ms-animation: blinkYellow 1s infinite;
+    -o-animation: blinkYellow 1s infinite;
+    animation: blinkYellow 1s infinite;
+}
+
+@-webkit-keyframes blinkYellow {
+    from {
+        background-color: #FF0;
+    }
+
+    50% {
+        background-color: #AA0;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0;
+    }
+
+    to {
+        background-color: #FF0;
+    }
+}
+
+@-moz-keyframes blinkYellow {
+    from {
+        background-color: #FF0;
+    }
+
+    50% {
+        background-color: #AA0;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0;
+    }
+
+    to {
+        background-color: #FF0;
+    }
+}
+
+@-ms-keyframes blinkYellow {
+    from {
+        background-color: #FF0;
+    }
+
+    50% {
+        background-color: #AA0;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0;
+    }
+
+    to {
+        background-color: #FF0;
+    }
+}
+
+@-o-keyframes blinkYellow {
+    from {
+        background-color: #FF0;
+    }
+
+    50% {
+        background-color: #AA0;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0;
+    }
+
+    to {
+        background-color: #FF0;
+    }
+}
+
+@keyframes blinkYellow {
+    from {
+        background-color: #FF0;
+    }
+
+    50% {
+        background-color: #AA0;
+        box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, #FF0 0 2px 0;
+    }
+
+    to {
+        background-color: #FF0;
+    }
+}
+
+.led-green {
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+    background-color: #ABFF00;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
+}
+
+.led-green-table {
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+    background-color: #ABFF00;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
+    margin-left: 100%;
+    position: relative;
+    top: -5px;
+}
+
+
+
+/*.led-red-table {
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+    background-color: #F00;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;
+    -webkit-animation: blinkRed 0.5s infinite;
+    -moz-animation: blinkRed 0.5s infinite;
+    -ms-animation: blinkRed 0.5s infinite;
+    -o-animation: blinkRed 0.5s infinite;
+    animation: blinkRed 0.5s infinite;
+    margin-left: 100%;
+    position: relative;
+    top: -5px;
+}*/
+
+
+
+
+.led-blue {
+    margin: 0 auto;
+    width: 24px;
+    height: 24px;
+    background-color: #24E0FF;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #006 0 -1px 9px, #3F8CFF 0 2px 14px;
+}
+
+.ledLabel {
+    width: 25%;
+    text-align: center;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    background-color: transparent;
+}
+
+    .table td, .table th {
+        vertical-align: top;
+        border-top: 1px solid #dee2e6;
+        padding: 0px;
+    }
+
+.td, .th {
+    padding: 0px;
+}
+
+#overlay {
+    background-color: rgb(0,0,0);
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 300%;
+    display: none;
+}
+
+
+.editCheckbox {
+    width: 39px;
+    transform: scale(1.7);
+}
+
+
+
+.creater-user-model {
+    font-size: 18px;
+}
+
+.collapsible {
+    cursor: pointer;
+    border: none;
+}
+
+    .active, .collapsible:hover {
+        background-color: #e9ecef;
+    }
+
+.content {
+    display: none;
+    overflow: hidden;
+}
+
+.inputNumberUser {
+    width: 45px;
+    border-radius: 0;
+    box-shadow: none;
+    border-color: #d2d6de;
+}
+
+.input-serial {
+    width: 83%;
+}
+
+.historic-warning {
+    width: 60%;
+    display: none;
+    align-items: flex-start;
+    font-size: 26px;
+    margin-left: 30%;
+    color: inherit;
+}
+
+
+.loader {
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 15%;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    display: none;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#allthethings {
+    width: 20%;
+    height: 30%;
+    left: 45%;
+    top: 35%;
+    position: fixed;
+    -webkit-transform: scale(2);
+}
+
+#cssload-contain {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(248, 248, 248, 0.50);
+    z-index: 1000;
+}
+
+.cssload-preloader {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 10;
+}
+
+    .cssload-preloader > .cssload-preloader-box {
+        position: absolute;
+        height: 29px;
+        top: 50%;
+        width: 500px;
+        margin: -15px 0 0 -146px;
+        perspective: 195px;
+        -o-perspective: 195px;
+        -ms-perspective: 195px;
+        -webkit-perspective: 195px;
+        -moz-perspective: 195px;
+    }
+
+    .cssload-preloader .cssload-preloader-box > div {
+        position: relative;
+        width: 29px;
+        height: 29px;
+        background: rgb(204,204,204);
+        float: left;
+        text-align: center;
+        line-height: 29px;
+        font-family: Verdana;
+        font-size: 19px;
+        color: rgb(255,255,255);
+    }
+
+.tableHistoryDate {
+    width: 100%;
+    right: 5px;
+    position: relative;
+}
+
+
+.tdHistoryDate {
+    width: 105%;
+    position: relative;
+}
+
+.buttonHistory {
+    background-color: #007bff;
+    color: white;
+    height: 27px;
+    margin-left: 8px;
+}
+
+.loadingDiv {
+    text-align: center;
+    border: 3px solid #007bff;
+    display: none;
+}
+
+.monthInput {
+    height: 30px;
+}
+
+.maximumElement {
+    margin-bottom: -0.5%;
+}
+
+.minimunElement {
+    margin-bottom: -3%;
+    margin-left: 3%;
+} 
+
+.inputTimeHour {
+    width: 73px;
+    padding: 1px;
+}
+
+.inputTimeHourMargin {
+    margin-left: -2px;
+}
+
+.tdHistory {
+    padding: 1px;
+}
+
+.historyDashboard {
+    height: 100%;
+    width: 100%;
+    color: aliceblue;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+.sideHistoryMenu {
+    position: absolute;
+    right: 0px;
+    width: 2%;
+    background-color: darkgray;
+    height: 100%;
+}
+
+.alingmentV_history {
+    padding-top: 5%;
+    padding-right: 0%;
+    padding-bottom: 0px;
+    padding-left: 25%;
+    cursor: pointer;
+}
+
+
+.divVariablesContainer {
+    display: contents;
+    background-color: #54556136;
+    min-width: 100%;
+    width: 100%;
+}
+
+.variableValueRow {
+    margin-left: 28%;
+}
+
+.arrowHover {
+    cursor: pointer;
+}
+
+.dateInicial {
+    border: 2px solid rgb(0, 123, 255);
+}
+
+.dataFinal {
+    border: 2px solid rgb(0, 123, 255);
+}
+
+.tableHistory {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.historyIcon {
+    border: 0px;
+    width: 10%;
+    background: content-box;
+}
+
+.tdHistoryTable2 {
+    width: 25%;
+}
+
+.tdHistoryGraphCanvas {
+    height: 300px;    
+    width: 95%;
+}
+
+.panelComponentSpan {
+    left: 1%;
+    position: relative;
+}
+
+.historyRowComponents {
+    display: none;
+    grid-template-columns: 97% auto;
+    background-color: #d8e5ff;
+}
+
+.historyRowComponentsSelected {
+    display: none;
+    grid-template-columns: 97% auto;
+    background-color: #92aee4;
+}
+
+.historyRowComponentsDisplay {
+    display: block;
+}
+
+.divHistoryTable {
+    width: 100%
+}
+
+.divHistoryTableComponent {
+    text-align: center;
+    background-color: #ccdaff;
+    border: 2px solid rgb(216 229 255);
+}
+
+
+.divHistoryTableComponentSon {
+    text-align: center;
+    /*background-color: #d8e5ff;*/
+    cursor: auto;
+    border-bottom: 2px solid rgb(181 208 249);
+    border-left: 2px solid rgb(181 208 249);
+    border-top: 2px solid rgb(181 208 249);
+}
+
+.arrowHistorySpan {
+    position: relative;
+    text-align: center;
+    border-bottom: 2px solid rgb(181 208 249);
+    border-right: 2px solid rgb(181 208 249);
+    border-top: 2px solid rgb(181 208 249);
+    right: 20%;
+}
+
+.divSelectedVariables {
+    background-color: rgb(146 174 228);
+}
+
+.arrowSelectedVariable {
+    width: 20%;
+    text-align: center;
+}
+
+.labelSelectedVariable {
+    width: 60%;
+    position: relative;
+    display: inline-table;
+    text-align: center;
+    font-size: larger;
+}
+
+.rowSelectedVariable {
+    border: 2px solid rgb(146 174 228);
+    border-radius: 10px;
+    background-color: #b1c5eb;
+}
+
+
+.titleArrowHistoric {
+    right: 10%;
+    position: relative;
+    float: right;
+}
+
+.inputSelectedDate {
+    border: 3px solid #92aee4;
+    text-align: center;
+}
+
+.buttonSelectedDate {
+    background-color: dodgerblue;
+    color: #fff8ff;
+    font-size: large;
+    margin-top: 10px;
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 9px;
+}
+
+    .buttonSelectedDate:hover {
+        color: #000000;
+    }
+
+.titleTableGraphHistory {
+    text-align: center;
+    font-size: larger;
+}
+
+.buttonSlider {
+    cursor: pointer;
+    width: 12%;
+    max-width: 200px;
+    background-color: dodgerblue;
+    text-align: center;
+    color: white;
+    border: 1px solid dodgerblue;
+    height: 32px;
+    border-radius: 5px;
+    margin-left: 8px;
+}
+
+    .buttonSlider:hover {
+        color: #212529;
+    }
+
+.WarningGraphZero {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    bottom: 24%;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    z-index: 15;
+    top: 38%;
+    left: 28%;
+}
+
+
+.telemetryVersion {
+    position: fixed;
+    display: none;
+    margin-left: -10px;
+    margin-top: -25px;
+}
+
+.variableNickNameChanged {
+    background-color: #ffff00a1;
+}
+
+.alarmVariableStatusDiv {
+    display: none;
+}
+
+.icnTd {
+    color: dodgerblue;
+    width: 16px;
+    height: 16px;
+    padding: 0 3px;
+}
+
+.btnCancel {
+    background-color: #6b88a4;
+}
+
+.errorMessageBox {
+    display: none;
+    position: fixed;
+    width: 17%;
+    background-color: #cc3d3aeb;
+    border-color: #ebccd1;
+    align-content: center;
+    top: 35px;
+    left: 81%;
+    color: white;
+    height: 31px;
+}
+
+.dashboardTitle {
+    display: block;
+    margin: 0px;
+    font-weight: 400;
+    text-align: center;
+    color: #f5f2f2bf;
+    padding-right: 8px;
+}
+
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    overflow: visible;
+    background: #ffffff91 url('../Images/onda_nova.gif') no-repeat center center;
+}
+
+
+.iconHistoryGraph {    
+    position: relative;
+    top: 7em;
+    left: 5em;
+}
+
+.iconHistoryWindown {
+    z-index: 0;
+    position: absolute;
+    top: 0em;
+}
+
+.tmVersion {
+    color: lightblue;
+    position: absolute;
+    font-size: 0.6em;
+    right: 0.5em;
+    top: 4.5em;
+}
+
+#infoLabel {
+    display:none;
+}

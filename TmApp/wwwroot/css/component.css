@@ -1,0 +1,198 @@
+﻿.componentDashboard {
+    background-color: #92aee4; 
+    margin: 0 1em;
+}
+
+.tdComponentDashboard {
+    background: #ccdaff;
+    display: grid;
+    grid-template-columns: 25%;
+    margin: 2px 0 0 4px;
+}
+
+.ComponentNameTd {
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-left: 1em;
+}
+
+.componentDetailsShow {
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    grid-column-gap: 0.7em;
+}
+
+.btnComponentsEdits {
+    background: dodgerblue;
+    border: 1px solid dodgerblue;
+    border-radius: 3px;
+    color: white;
+    width: 100%;
+    margin: 10px 0;
+    padding: 2px;
+}
+
+.inputsComponentsEdits {
+    height: 50%;
+}
+
+.componentTable {
+    margin-left: 1em;
+}
+
+.mobileMessage {
+    display: none;
+}
+
+.PercentageId {
+    width: 186px;
+}
+
+@media (max-width: 992px) {
+    .componentTable {
+        display: none;
+    }
+
+    .mobileMessage {
+        display: initial;
+        letter-spacing: -0.5px;
+        text-align: center; 
+    }
+}
+
+/* Tipo de Componente */
+
+.componentDetailTd {
+    display: none;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    padding-left: 10px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.positionVariable {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+
+.btnComponentEdit {
+    background: dodgerblue;
+    border: 1px solid dodgerblue;
+    border-radius: 3px;
+    color: white;
+    margin-top: 0.5em;
+    width: 100%;
+    padding: 2px;
+    text-align: center;
+}
+
+/* Selecionar Variável */
+
+.variableDetailTd {
+    border-left: 1px black solid;
+    display: none;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    padding-left: 10px;
+    align-items: baseline;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.buttonAreaVariable {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    margin-bottom: 13px;
+    align-self: end;
+}
+
+.historyCheckbox {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: -30px;
+}
+
+.editVariableBtn {
+    background: dodgerblue;
+    border: 1px solid dodgerblue;
+    border-radius: 3px;
+    color: white;
+    margin-top: 0.5em;
+    width: 100%;
+    height: 25%;
+    padding: 2px;
+    text-align: center;
+}
+
+.associateAlarmBtn {
+    background: dodgerblue;
+    border: 1px solid dodgerblue;
+    border-radius: 3px;
+    color: white;
+    margin-top: 0.5em;
+    width: 100%;
+    height: 45%;
+    padding: 2px;
+    text-align: center;
+}
+
+/* Selecionar Alarme */
+.AlarmDetailTd {
+    border-left: 1px black solid;
+    display: none;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    padding-left: 10px;
+    align-items: baseline;
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.realValorVar {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+
+.programAlarmVar, .weekendCheckboxVar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+/* Selecionar Ação */
+.actionDetailTd {
+    border-left: 1px black solid;
+    display: none;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    padding-left: 10px;
+    align-items: baseline;
+    grid-column-start: 7;
+    grid-column-end: 9;
+}
+
+.componentOffLabel {
+    display: none;
+    background-color: firebrick;
+    border: 1px solid firebrick;
+    border-radius: 15px;
+    box-shadow: inset 3px -5px 15px 15px #B93838;
+    color: white;
+    font-size: 60px;
+    justify-content: center;
+    margin: -20px 90px;
+}
+
+.componentTelemetry {
+    width: 190px;
+}
+
+.componentsOffDashboard {
+    display: none;
+}

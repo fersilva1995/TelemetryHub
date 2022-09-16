@@ -1,0 +1,637 @@
+﻿.tableHistory {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0.2em;
+}
+
+.dateInicial, .dataFinal {
+    border: 2px solid rgb(0, 123, 255);
+}
+
+.titleDataHistory {
+    font-size: 22px;
+    text-align: center;
+}
+
+.historyBreak {
+    page-break-after: always;
+}
+
+.sonDivHistory {
+    display: grid;
+    grid-template-columns: repeat(2, 48%);    
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.grandSonDivHistory {
+    width: 98%;    
+}
+
+.historyContainerDiv {
+    border-radius: 3px;
+    border: 3px solid #007bff75;
+    margin-top: 5px;
+}
+
+.nameAndVariablesForGraph {
+    display: none;
+}
+
+.historyDivVariable {
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    justify-content: center;
+}
+
+.historyPanelOrigin {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    height: max-content;
+}
+
+.divHistoryTable {
+    width: 100%
+}
+
+.divHistoryTableComponent {
+    background-color: #ccdaff;
+    border: 2px solid #d8e5ff;
+    text-align: center;
+}
+
+.arrowHover.history {
+    cursor: pointer;
+}
+
+.titleArrowHistoric {
+    float: right;
+    position: relative;
+    right: 10%;
+}
+
+.historyRowComponents {
+    background-color: #d8e5ff;
+    display: none;
+    grid-template-columns: 96% auto;
+}
+
+.historyRowComponentsSelected {
+    background-color: #92aee4;
+    display: none;
+    grid-template-columns: 96% auto;
+}
+
+.divHistoryTableComponentSon {
+    border-bottom: 2px solid #B5D0F9;
+    border-left: 2px solid #B5D0F9;
+    border-top: 2px solid #B5D0F9;
+    cursor: auto;
+    text-align: center;
+}
+
+.panelComponentSpan {
+    text-align: center;
+}
+
+
+.divSelectedVariables {
+    background-color: #92aee4;
+}
+
+.rowSelectedVariable {
+    background-color: #b1c5eb;
+    border: 2px solid #92aee4;
+    display: grid;
+    grid-template-columns: auto 80%;
+}
+
+.arrowSelectedVariable {
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.labelSelectedVariable {
+    font-size: 15px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.labelHistory {
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.form-control.selectGraphic {
+    width: 50%;
+}
+
+.graphicType {
+    margin: 1em;
+    text-align: center;
+}
+
+.graphicName {
+    text-align: center;
+}
+
+.labelType {
+    margin-right: 0.5em;
+}
+
+.inputType {
+    border: 1px solid dodgerblue;
+    border-radius: 3px;
+}
+
+    .inputType.name {
+        width: 120px;
+    }
+
+.graphicBtn,
+.relatorioBtn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.btnGenerate {
+    background-color: dodgerblue;
+    border: 2px solid dodgerblue;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    margin-top: 1em;
+    padding: 2px 20px;
+    text-transform: capitalize;
+}
+
+.mainDivHistoryGraphics {
+    padding-top: 1em;
+}
+
+.sliderDiv {
+    border-top: 3px solid #007bff75;
+    height: 120px;
+}
+
+.divDateInputLocalLeft {
+    float: left;
+    border: 2px solid #bbccee;
+    background-color: #f4f6f9;
+    margin-left: 20px;
+    height: 31px;
+    margin: 10px;
+}
+
+.divDateInputLocalRight {
+    float: right;
+    border: 2px solid #bbccee;
+    background-color: #f4f6f9;
+    margin-left: 20px;
+    height: 31px;
+    margin: 10px;
+}
+
+.parent-slider-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 96%;
+    margin-top: 50px;
+}
+
+.localSliderDiv {
+    height: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.slider-container {
+    position: relative;
+    height: 20px;
+    background-color: #f2f2f9;
+}
+
+.dateLocalStyle {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 10px 0 10px;
+}
+
+.inputSelectedDateLocal {
+    /*hide the Divs*/    
+    border: 2px solid #92aee4;
+    text-align: center;
+    font-size: smaller;
+    margin-top: -12px;
+    border-radius: 4px;
+}
+
+.btn-search {
+    display: flex;
+    justify-content: center;
+}
+
+.btnReport {
+    background-color: firebrick;
+    border: 2px solid firebrick;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    margin-top: 1em;
+    padding: 2px 8px;
+    text-transform: capitalize;
+    width: 40%;
+}
+
+.historyContainerTable {
+    display: flex;
+    flex-direction: column;
+}
+
+.historyTitle {
+    align-self: center;
+}
+
+.componentsHistory {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mydivHistoryShowheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #92aee4;
+    color: #fff;
+}
+
+.iconsTableValue {
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.historyCardTableDiv {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 400px;
+    resize: both;
+}
+
+.initialDay, .endDay {
+    height: 1.47em;
+    width: 3.5em;
+}
+
+.initialHour, .endHour {
+    height: 1.5em;
+    width: 3.5em;
+}
+
+.initialMin, .endMin {
+    height: 1.5em;
+    width: 5em;
+}
+
+.initialSec, .endSec {
+    height: 1.5em;
+    width: 6em;
+}
+
+.initialYear, .endYear {
+    width: 5em;
+}
+
+.initialDay, .initialMonth, .initialYear, .initialHour, .initialMin, .initialSec,
+.endDay, .endMonth, .endYear, .endHour, .endMin, .endSec {
+    margin-right: 2px;
+    margin-bottom: 5px;
+}
+
+.filterIcon {
+    border: 1px solid;
+    background: white;
+    padding: 2px 4px;
+    color: #2b7bc9;
+}
+
+    .filterIcon:hover {
+        color: #164878;
+        cursor: pointer;
+        transition: 1s ease-in-out;
+    }
+
+.cleanComponent {
+    display: flex;
+    margin-right: 16px;
+    margin-bottom: -10px;
+    font-size: 12px;
+}
+
+.mydivHistoryShow {
+    z-index: 9;
+    background-color: #f1f1f1;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+    display: none;
+    position: fixed;
+    top: 253px;
+    left: 287px;
+}
+
+.mydivHistoryShowheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #92aee4;
+    color: #fff;
+}
+
+.clearHistoryComponent {
+    margin-left: 51%;
+}
+
+.mainDivhistoryData {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0.8em;
+    border-top: 3px solid #7fbbfb;
+}
+
+.historyPageTransition {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 1em 0;
+    border-top: 1px solid #cfcfcf;
+}
+
+.historyYMaxValue {
+    position: relative;
+    left: 35px;
+    top: 13px;
+}
+
+.historyYMinValue {
+    position: relative;
+    left: 35px;
+}
+
+.historyYaxisTop {
+    position: relative;
+    margin-top: -219px;
+    left: 35px;
+    margin-right: 30px;
+}
+
+.historyYaxisMiddle {
+    position: relative;
+    margin-top: 32px;
+    left: 35px;
+}
+
+.historyYaxisBottom {
+    position: relative;
+    margin-top: 28px;
+    left: 35px;
+}
+
+.historyYMaxFixed {
+    position: relative;
+    top: -233px;
+    left: -5px;
+    display: none;
+}
+
+.historyYMinFixed {
+    position: relative;
+    top: 12px;
+    display: none;
+}
+
+.deleteWindownHistory {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 360px;
+    display: none;
+    position: fixed;
+    left: 30%;
+    top: 40%;
+    text-align: center;
+    z-index:3;
+}
+
+.labelGraphic {
+    padding: 4px;
+}
+
+.delGraphicBtn {
+    display: flex;
+    margin-bottom: 4px;
+    justify-content: center;
+}
+
+.headerHistoryTable {
+    display: flex;
+}
+
+#valueHistoryCard {
+    height: 22px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.tableHistoricTitles {
+    font-weight: 600;
+}
+
+.historyCardFilter {
+    border-bottom: 1px solid #cfcfcf;
+    display: flex;
+    justify-content: center;
+}
+
+#historyCardPage {
+    width: 50px;
+    border: 1px solid;
+    background: none;
+    text-align: center;
+    font-weight: 700;
+}
+
+.tableHistoricList {
+    width: inherit;
+}
+
+.historyDivYaxis {
+    z-index: 2;
+}
+
+.filterConditionHistoric {
+    display: block;
+}
+
+
+/* History Media Queries */
+
+@media (max-width: 1092px) /* When sidebar is active */ {
+    .dateLocalStyle {
+        margin: 30px 0;
+    }
+    .inputSelectedDateLocal {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 991px) {
+    .sliderDiv {
+        height: 130px;
+    }
+
+    .pageTitle.history {
+        font-size: 1.7rem;
+        margin-bottom: 0;
+    }
+
+    .sonDivHistory {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .titleDataHistory {
+        margin-left: 0;
+    }
+     
+    .historyRowComponents {
+        grid-template-columns: 95% auto;
+    }
+
+    .historyRowComponentsSelected {
+        grid-template-columns: 95% auto;
+    }
+
+    .inputSelectedDateLocal {
+        font-size: inherit;
+        margin-top: -7px;
+    }
+
+    .btn-search {
+        margin-top: -50px;
+    }
+
+    .mydivHistoryShow {
+        top: 53px;
+        left: 87px;
+    }
+}
+
+@media (max-width: 768px) {
+    .divHistoryTableComponent {
+        text-align: inherit;
+    }
+
+    .titleArrowHistoric {
+        position: inherit;
+    }
+
+    .historyRowComponents {
+        grid-template-columns: 93% auto;
+    }
+
+    .historyRowComponentsSelected {
+        grid-template-columns: 93% auto;
+    }
+}
+
+@media (max-width: 650px) {
+    .historyRowComponents {
+        grid-template-columns: 92% auto;
+    }
+
+    .historyRowComponentsSelected {
+        grid-template-columns: 92% auto;
+    }
+}
+
+@media (max-width: 550px) {
+    .historyRowComponents {
+        grid-template-columns: 91% auto;
+    }
+
+    .historyRowComponentsSelected {
+        grid-template-columns: 91% auto;
+    }
+
+    .divHistoryTableComponentSon {
+        text-align: left;
+    }
+
+    .deleteWindownHistory {
+        left: 13%;
+        width: 265px;
+    }
+}
+
+@media(max-width: 480px) {
+    .sliderDiv {
+        height: 170px;
+    }
+
+    .btn-search {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 450px) {
+    .pageTitle.history {
+        font-size: 1.7rem;
+        margin-bottom: 0;
+    }
+
+    .titleDataHistory {
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 0;
+    }
+
+    .dateInicial, .dataFinal {
+        font-size: 10px;
+    }
+
+    .historyRowComponents {
+        grid-template-columns: 90% auto;
+    }
+
+    .historyRowComponentsSelected {
+        grid-template-columns: 90% auto;
+    }
+
+    .dateLocalStyle {
+        flex-wrap: wrap;
+        margin: 17px 3px;
+    }
+
+    .inputSelectedDateLocal {
+        margin-top: 5px;
+        width: 45%;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .dateInicial, .dataFinal {
+        font-size: 10.4px;
+    }
+    .historyRowComponents {
+        grid-template-columns: 88% auto;
+    }
+    .historyRowComponentsSelected {
+        grid-template-columns: 88% auto;
+    }
+}

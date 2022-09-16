@@ -1,0 +1,64 @@
+﻿.snHome {
+    text-align: center;
+    width: 100%;
+}
+
+.populatorCreate {
+    float: right;
+    margin-right: 10px;
+    margin-top: -68px;
+    width: 40%;
+}
+
+/* Adicionar SN */
+
+.formAddSN {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.inputSNDescription {
+    width: 320px;
+    margin-left: 10px;
+}
+
+@media (max-width: 992px) {
+    .formAddSN {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        line-height: 2;
+    }
+
+    .inputSNDescription {
+        width: 90%;
+    }
+}
+
+@media (max-width: 550px) {
+    .formAddSN {
+        display: grid;
+        grid-template-columns: 43% 56%;
+        line-height: 2;
+    }
+}
+
+@media (max-width: 500px) {
+    .checkboxHome {
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    .btnCreate {
+        display: flex;
+        justify-content: center;
+    }
+
+    .populatorCreate {
+        width: 63%;
+        height: 1%;
+        margin-top: -5px;
+        margin-bottom: 20px;
+    }
+}

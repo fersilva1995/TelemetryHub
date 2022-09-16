@@ -1,0 +1,14 @@
+﻿.formShowPanels {
+    display: flex;
+    align-items: baseline;
+}
+
+.inputTimePresentation {
+    margin-left: 1em;
+    width: 70px;
+}
+
+.inputUserPresentation {
+    margin-left: 1em;
+    width: 150px;
+}

@@ -1,0 +1,72 @@
+﻿.textComponentHeader {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -25px;
+}
+
+.textComponentChanger {
+    text-align: end;
+}
+
+.textIcons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    margin: -8px 8px;
+}
+
+.textTitle {
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+.alarmText, .historyText,
+.actionText, .actionReceiverText {
+    padding: 6px 0;
+}
+
+.text-name {
+    color: white;
+    font-size: 106%;
+    width: 100%;
+    text-align: center;
+    color: #f5f2f2bf;
+}
+
+.text-value {
+    color: dodgerblue;
+    position: relative;
+    left: 50px;
+    font-size: 4rem;
+    width: 80%;
+    text-align: center;
+    display: block;
+}
+
+.text-value-subtitle {
+    color: white;
+    position: relative;
+    font-size:1.3rem;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+
+.text-info-botton {
+    top: -17%;
+    position: relative;
+    font-size: 75%;
+}
+
+
+.hidden_value {
+    display: none;
+}
+
+.textHeaderOffDashboard {
+    position: relative;
+    top: -45px;
+}

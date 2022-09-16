@@ -1,0 +1,853 @@
+﻿/* Home do mapa */
+
+.mapHome {
+    text-align: center;
+    width: 100%;
+}
+
+.mapCreate {
+    float: right;
+    margin-right: 10px;
+    margin-top: -68px;
+    width: 40%;
+}
+
+.mapMobIcons {
+    display: none;
+}
+
+.layerBtn {
+    width: 75px;
+    color: white;
+    background: dodgerblue;
+    border: 1px solid dodgerblue;
+    border-radius: 6px;
+    margin-top: 3px;
+    margin-bottom: 4px;
+    padding: 0 5px;
+}
+
+@media(max-width: 550px) {
+    .mapDeskIcons, .mapItens {
+        display: none;
+    }
+
+    .mapMobIcons {
+        display: initial;
+    }
+}
+
+@media(max-width: 425px) {
+    .mapCreate {
+        width: 63%;
+        height: 1%;
+        margin-top: -5px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Adicionar e Editar Mapa */
+
+.formAddMap, .formEditMap {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.inputMapName, .inputMapDesc, .inputMapLat, .inputMapLong {
+    margin-left: 1em;
+}
+
+    .inputMapName:invalid, .inputMapLat:invalid, .inputMapLong:invalid {
+        border: 1px solid firebrick;
+    }
+
+.inputMapName {
+    width: 200px;
+}
+
+.inputMapDesc {
+    width: 200px;
+}
+
+.inputMapLat, .inputMapLong {
+    width: 100px;
+}
+
+.formSelectMapUser {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin: 2em 1em;
+}
+
+@media(max-width: 992px) {
+    .formAddMap, .formEditMap {
+        display: grid;
+        grid-template-columns: repeat(4, max-content);
+        line-height: 2;
+    }
+}
+
+@media(max-width: 550px) {
+    .formAddMap, .formEditMap {
+        display: grid;
+        grid-template-columns: 30% 60%;
+        line-height: 2;
+    }
+}
+
+@media(max-width: 380px) {
+    .inputMapName, .inputMapDesc {
+        width: 180px;
+    }
+}
+
+/* Deletar Mapa */
+
+.detailsMap {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    grid-column-gap: 2em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+/* Camadas */
+
+.btnLayerCreate {
+    float: right;
+    margin-right: 10px;
+    margin-top: -60px;
+    width: 40%;
+}
+
+.btnDisplayConfig {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    margin: 1em 0;
+}
+
+.createLayersBtn {
+    background: dodgerblue;
+    border: 1px solid dodgerblue;
+    color: white;
+    border-radius: 5px;
+    padding: 2px 4px;
+}
+
+.returnLayerBtn {
+    background: #6b88a4;
+    border: 1px solid #6b88a4;
+    border-radius: 5px;
+    color: white;
+    width: 150px;
+    margin: 1em 0 1em 1em;
+    padding: 2px;
+}
+
+.layerBtnArea {
+    display: flex;
+}
+
+.editLayersBtn {
+    background: seagreen;
+    border: 1px solid seagreen;
+    border-radius: 5px;
+    color: white;
+    padding: 2px 5px;
+}
+
+.deleteLayersBtn {
+    background: firebrick;
+    border: 1px solid firebrick;
+    color: white;
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+
+.createLayers {
+    display: grid;
+    grid-template-columns: 7em 10em;
+    grid-row-gap: 1em;
+    align-items: baseline;
+    margin-left: 1em;
+}
+
+.saveLayerBtn {
+    background: dodgerblue;
+    border: 1px solid dodgerblue;
+    border-radius: 5px;
+    color: white;
+    width: 150px;
+    margin: 1em 0 1em 1em;
+    padding: 2px;
+}
+
+.areaLayersEdit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.editLayers {
+    display: grid;
+    grid-template-columns: 7em 10em;
+    grid-row-gap: 1em;
+    align-items: baseline;
+    margin-left: 1em;
+}
+
+.editLayerBtn {
+    background: seagreen;
+    border: 1px solid seagreen;
+    border-radius: 5px;
+    color: white;
+    width: 150px;
+    margin: 1em 5em 1em 5em;
+    padding: 2px;
+}
+
+.deleteLayer {
+    display: grid;
+    grid-template-columns: 7em 8em;
+    grid-row-gap: 1em;
+    margin-left: 1em;
+    align-items: baseline;
+}
+
+
+.deleteLayerBtn {
+    background: firebrick;
+    border: 1px solid firebrick;
+    border-radius: 5px;
+    color: white;
+    width: 120px;
+    padding: 2px;
+}
+
+@media (max-width: 460px) {
+    .btnLayerCreate {
+        width: 63%;
+        height: 1%;
+        margin-top: -5px;
+        margin-bottom: 20px;
+    }
+
+    .btnDisplayConfig {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.7em;
+    }
+}
+
+/* Toogler */
+
+#toogleEventMap {
+    display: none;
+}
+
+.toogleLabel {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 45px;
+    height: 25px;
+    background-color: #e7e7e7;
+    border-radius: 25px;
+    position: relative;
+    transition: all .4s ease-out;
+}
+
+    .toogleLabel:after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 15px;
+        height: 15px;
+        background-color: #007bed;
+        border-radius: 50%;
+        transition: all .4s ease-out;
+    }
+
+input:checked + .toogleLabel {
+    background: #e7e7e7;
+}
+
+    input:checked + .toogleLabel:after {
+        transform: translate3d(20px, 0, 0);
+        background-color: #d40000;
+    }
+
+.toogleMap {
+    display: inherit;
+}
+
+/* Mapa */
+
+.configurationMenu {
+    margin: 0.5px;
+}
+
+.mapHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 0.5em;
+    width: 98%;
+}
+
+.titleMapDashboard {
+    flex-grow: 2;
+}
+
+.centerMapBtn {
+    flex-grow: 0;
+    width: 200px;
+    color: white;
+    background: dodgerblue;
+    border: 1px solid dodgerblue;
+    border-radius: 6px;
+}
+
+.iconMapDashboard {
+    flex-grow: 2;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-right: 0.5em;
+    text-align: end;
+}
+
+.sliderHistoricMap {
+    position: relative;
+    top: -2px;
+}
+
+.filterOptions {
+    display: flex;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.counterCheckerElementMap {
+    width: 50%;
+    padding-left: 10px;
+    padding-top: 5px;
+    border-right: 2px solid black;
+}
+
+.filtersVariablesMap {
+    width: 50%;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.filterTitles {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 2em;
+}
+
+.itensOptions {
+    letter-spacing: 0.5px;
+    margin-left: 5px;
+}
+
+.inputDivsMap {
+    background: #343a40;
+    position: absolute;
+    color: white;
+    line-height: 2;
+    display: block;
+    width: 0px;
+    z-index: 1;
+    right: 0px;
+    overflow-x: hidden;
+    transition: all .9s ease-in .2s;
+    position: absolute;
+    margin-left: 50px;
+    top: 60px;
+}
+
+.control-sidebar-inputDivsMap {
+    width: 250px;
+    height: 250vh;
+    display: none;
+    padding-top: 1em;
+    right: -250px;
+    top: 140px;
+    transition: right 1s ease-in-out, display 1s ease-in-out;
+}
+
+.titleInputs {
+    margin-left: 1em;
+}
+
+.buttonAdvancedOptions {
+    color: white;
+    width: 100%;
+    border: solid 1px seagreen;
+    font-size: 12px;
+    margin-top: 1em;
+    background: seagreen;
+    border-radius: 3px;
+    margin: 1em 0;
+    padding: 3px;
+    width: 100%;
+    transition: ease-in 0.3s;
+    font-size: 16px;
+}
+
+    .buttonAdvancedOptions:hover {
+        transition: .5s ease-in;
+        transform: scale(95%);
+    }
+
+.inputsAdvancedMap {
+    width: 85%;
+    margin-left: 1em;
+}
+
+.buttonCloseOptionsComponent {
+    background: #343a40;
+    color: white;
+    border: white 1px solid;
+    width: 91%;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+.asideButton {
+    width: 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media(max-width: 768px) {
+    .mapHeader {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titleMapDashboard {
+        margin-bottom: -0.3em;
+        width: 300px;
+        text-align: center;
+    }
+
+    .centerMapBtn {
+        margin-top: 0.3em;
+        margin-bottom: -0.3em;
+        margin-right: 5px;
+    }
+
+    .iconMapDashboard {
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+        align-self: stretch;
+        text-align: center;
+    }
+}
+
+.divMap {
+    width: 99%;
+    height: 84vh;
+    position: absolute;
+    left: 1%;
+}
+
+@media (max-width: 991px) {
+    .divMap {
+        left: 0.5%;
+        width: 99%;
+    }
+}
+
+#componentList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.configMenuMaps {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 550px;
+    margin-right: -14px;
+    padding-right: 10px;
+}
+
+.configAdvancedMenu {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 700px;
+    margin-right: 2px;
+    padding-right: 10px;
+}
+
+.legendNameDiv {
+    display: flex;
+    align-items: baseline;
+    padding: 0 0.5em;
+}
+
+#scrollbarCustom::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+#scrollbarCustom::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+#scrollbarCustom::-webkit-scrollbar-thumb {
+    background-color: dodgerblue;
+    border: 2px solid dodgerblue;
+}
+
+.btnImportConfig {
+    background: dodgerblue;
+    border: 1px solid dodgerblue;
+    border-radius: 3px;
+    color: white;
+    margin: 1em 0;
+    padding: 3px;
+    width: 100%;
+    transition: ease-in 0.3s;
+}
+
+.btnAdvancedConfig {
+    background: seagreen;
+    border: 1px solid seagreen;
+    border-radius: 3px;
+    color: white;
+    margin: 1em 0;
+    padding: 3px;
+    width: 100%;
+    transition: ease-in 0.3s;
+}
+
+    .btnImportConfig:hover, .btnAdvancedConfig:hover {
+        transform: scale(95%);
+        color: ghostwhite;
+        transition: ease-out .5s;
+    }
+
+.legendNameDiv {
+    display: flex;
+    align-items: baseline;
+}
+
+.btnAreaMap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+
+.MapCard {
+    position: relative;
+}
+
+
+.ComponentDivsMap {
+    display: none;
+}
+
+.divOptionsMap {
+    display: none;
+}
+
+.labelsIconMap {
+    color: white;
+    background-color: red;
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    font-size: 10px;
+    text-align: center;
+    width: 30px;
+    white-space: nowrap;
+}
+
+.componentSelection {
+    display: none;
+}
+
+.componentSelection {
+    display: none;
+    position: fixed;
+    color: white;
+    background: #343a40;
+    text-align: center;
+    width: 20%;
+}
+
+.MapComponent {
+    position: fixed;
+    display: none;
+    background-color: rgb(48 48 48);
+    cursor: move;
+    color: white;
+}
+
+.componentListButton {
+    background: #303030;
+    border: white 1px solid;
+    color: rgb(255 255 255);
+    margin-left: 0.5em;
+    font-size: 12px;
+}
+
+.canvasMapComponent {
+    /*height: 300px;*/
+    height: calc(320px - 100%);
+    width: 380px;
+    padding-top: 10px;
+    margin-bottom: 2em;
+}
+
+    .canvasMapComponent > .digiComponentHeader {
+        margin-top: 60px;
+        margin-left: 10px;
+    }
+
+.divfilterMap {
+    position: fixed;
+    display: none;
+    background-color: rgb(48 48 48);
+    cursor: move;
+}
+
+.clearFilterDiv {
+    width: 100px;
+    background-color: darkred;
+}
+
+.LayerDetails {
+    display: none;
+}
+
+.LayerSelection {
+    display: none;
+}
+
+.LayerOptionsSelectors {
+    display: none;
+}
+
+.LayerSelection {
+    display: none;
+}
+
+.deleteWindownPanels {
+    top: 50%;
+    background: cornsilk;
+}
+
+.buttonFilterClose {
+    background: #303030;
+    color: white;
+    border: black;
+    align-items: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.mapDivPanels {
+    position: absolute;
+    display: none;
+    right: 16em;
+    width: 30em;
+}
+
+.ComponentDivsCard {
+    display: none;
+}
+
+
+.mapComponentButton {
+    float: right;
+    background: #343a40;
+    color: white;
+    margin-top: 5px;
+    border: white 2px solid;
+}
+
+.firstHeading {
+    display: flex;
+    justify-content: center;
+}
+
+
+.buttonLabelMarker {
+    background: #343a40;
+    color: white;
+    font-size: 15px;
+}
+
+.divMapsTableComponent {
+    border: 2px solid #ffffff;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+}
+
+.mapsRowComponents {
+    background-color: grey;
+    color: white;
+    display: none;
+    grid-template-columns: 100% auto;
+}
+
+    .mapsRowComponents:hover {
+        background-color: darkgrey;
+    }
+
+.mapsRowComponentsSelected {
+    background-color: black;
+    color: white;
+    display: none;
+    grid-template-columns: 100% auto;
+}
+
+    .mapsRowComponentsSelected:hover {
+        background-color: black;
+    }
+
+.divMapTableComponentSon {
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-top: 2px solid #ffffff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.arrowMapSpan {
+    position: relative;
+    text-align: center;
+    border-bottom: 2px solid rgb(255 255 255);
+    border-right: 2px solid rgb(255 255 255);
+    border-top: 2px solid rgb(255 255 255);
+    right: 20%;
+    color: #343a40;
+}
+
+.alertBoard {
+    height: 30px;
+    background: #343a40;
+    color: #c2c7d0;
+    display: none;
+}
+
+/* (A) FIXED WRAPPER */
+.hwrap {
+    overflow: hidden;
+}
+
+/* (B) MOVING TICKER WRAPPER */
+.hmove {
+    display: flex;
+    animation: tickerh linear 15s infinite;
+}
+
+    .hmove:hover {
+        animation-play-state: paused;
+    }
+
+    .hmove > div {
+        display: flex;
+        width: max-content;
+    }
+
+    .hmove > div > div:empty {
+        width: 5px;
+    }
+
+
+:root {
+    --my-start-width: translate3d(100%, 0, 0);
+    --my-end-width: translate3d(-350%, 0, 0);
+}
+
+@keyframes tickerh {
+    0% {
+        /*transform: translate3d(100%, 0, 0);*/
+         transform: var(--my-start-width);
+    }
+
+    100% {
+        transform: var(--my-end-width);
+    }
+}
+
+.btnAdvancedConfig {
+    background: seagreen;
+    border: 1px solid seagreen;
+    border-radius: 3px;
+    color: white;
+    margin: 1em 0;
+    padding: 3px;
+    width: 100%;
+    transition: ease-in 0.3s;
+}
+
+.bootstrapSwitchMap {
+    font-size: 22px;
+    letter-spacing: 0;
+}
+
+.newBarMap {
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    justify-content: flex-end;
+    white-space: break-spaces;
+}
+
+.iconsSlider {
+    padding: 0 10px;
+    font-size: 18px;
+    cursor: default;
+}
+
+.emptyWagon {
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+}
+
+.fullWagon {
+    display: flex;
+    background-color: #2e2823;
+    animation: mymove linear 5s infinite;
+    position: relative;
+}
+
+@keyframes mymove {
+    from {
+        left: 100%;        
+    }
+    to {
+        left: -150px;
+    }
+}
+
+.iconsSlider:first-child {
+    color: dodgerblue;
+}
+
+.iconsSlider {
+    color: darkred;
+}

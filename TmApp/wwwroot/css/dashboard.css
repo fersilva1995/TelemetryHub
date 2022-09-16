@@ -1,0 +1,319 @@
+﻿.tableDashboard {
+    background-color: black;
+    position: fixed;
+    margin-left: inherit;
+    width: 100%;
+}
+
+.dashboardHome {
+    text-align: center;
+    width: 100%;
+}
+
+.statusPanel {
+    display: flex;
+    justify-content: center;
+}
+
+.dashboardCreate {
+    float: right;
+    margin-right: 10px;
+    margin-top: -68px;
+    width: 42%;
+}
+
+.mobileIcons {
+    display: none;
+}
+
+.panelSelection {
+    background-color: rgb(244,246,249);
+    color: #212529;
+}
+
+.panelAlarmShow {
+    background: rgb(147,137,137);
+    color: #AF1D24;
+}
+
+.componentSelector {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: #303030;
+    border: #303030;
+    color: white;
+    font-size: 18px;
+    text-align: end;
+}
+
+@media (max-width: 630px) {
+    .dashboardUser {
+        display: none;
+    }
+
+    .dashboardIcons {
+        display: none;
+    }
+
+    .mobileIcons {
+        display: initial;
+        letter-spacing: -2px;
+    }
+}
+
+/* Adicionar e Editar Painel */
+
+.formCreateDashboard {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+
+.formSelectDashboardUser {
+    display: flex;
+    align-items: baseline;
+}
+
+.inputDashboardName, .inputDashboardDescription, .inputDashboardUser {
+    margin-left: 0.5em;
+}
+
+.inputDashboardName {
+    width: 150px;
+}
+
+    .inputDashboardName:invalid {
+        border: 2px solid firebrick;
+    }
+
+.inputDashboardDescription {
+    width: 420px;
+}
+
+.inputDashboardUser {
+    width: fit-content;
+}
+
+@media(max-width: 729px) {
+    .form-control {
+        width: 93%;
+        margin-left: 0.8em;
+    }
+}
+
+/* Dashboard */
+
+.form-control:disabled, input:disabled {
+    background-color: #606060;
+    border-color: #606060;
+    color: black;
+}
+
+.configurationMenuDashboard {
+    margin: 0.5px;
+}
+
+.btnAreaDashboard {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.dashboardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.titleDashboard {
+    flex-grow: 3;
+}
+
+.iconMenuDashboard {
+    flex-grow: 1;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-right: 0.5em;
+    text-align: end;
+}
+
+.btnModal {
+    float: right;
+    margin: 0.8em;
+}
+
+.inputsTypes {
+    width: 107px;
+}
+
+.alarmTriggerPageTitle {
+    color: firebrick;
+    background-color: rgb(48, 48, 48);
+}
+
+.alarmTriggerAlarmGauge {
+    background: rgb(178, 34, 34);
+}
+
+.alarmTriggerDashboardHeader {
+    background: rgb(48,48,48);
+}
+
+.messageInfoDivDashboard {
+    background: white;
+    border: 2px solid black;
+    display: none;
+    height: 40px;
+    left: 50%;
+    top: 50%;
+    position: fixed;
+    text-align: center;
+    width: 300px;
+    z-index: 1;
+}
+
+.messageInfoDashboard {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.labelEmptyTable {
+    color: white;
+    font-size: 100px;
+    display: none;
+    align-content: center;
+    justify-content: center;
+    opacity: 0.65;
+}
+
+.minMaxComponent {
+    display: none;
+}
+
+.eventComponentValue {
+    color: #dc2729;
+}
+
+.componentTitle {
+    letter-spacing: 0.5px;
+}
+
+.historicDivDash {
+    background-color: #343a40;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: white;
+    cursor: all-scroll;
+    display: none;
+    position: absolute;
+    left: 0%;
+    top: 70%;
+    text-align: center;
+    width: 240px;
+    padding: 10px 0;
+}
+
+.historyDashboardSelectors {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    row-gap: 10px;
+    margin-right: 10px;
+}
+
+#recordPercentage {
+    vertical-align: middle;
+    width: 20%;
+    height: 20px;
+    display: block;
+    margin-top: 10px;
+}
+
+#timeExtension {
+    width: 150px;
+    height: 28px;
+    position: relative;
+    top: 5px;
+}
+
+.historicDashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 2.4;
+    letter-spacing: 0.1px;
+}
+
+.dashboardInfoAlarm {
+    border-color: transparent;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media(max-width: 479px) {
+    .dashboardHeader {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titleDashboard {
+        margin-bottom: -0.3em;
+        width: 230px;
+        text-align: center;
+    }
+
+    .iconMenuDashboard {
+        margin-bottom: 0.3em;
+        margin-right: -5px;
+    }
+}
+
+
+.pathTable {
+    display: inline-table;
+    top: 30%;
+    background-color: #303030;
+}
+
+.buttonPaths {
+    border: none;
+    background: #303030;    
+    color: white;
+    font-weight: bolder;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+    .buttonPaths:hover {
+        background-color:white;
+        color:black;
+    }
+    .buttonPaths:active {
+        background-color: #888;
+        font-size: 1.05em;
+    }
+
+    #tablePaths {
+        cursor: pointer;
+        color: white;
+        width: 100%
+    }
+
+    #tablePaths > tr:nth-child(odd) {
+        background-color: #006cb0;
+    }
+
+    #tablePaths > tr:nth-child(even) {
+        background-color: #4981e2;
+    }
+
+    #tablePaths > tr:hover {
+        background-color: #5caadb;
+        color:black
+    }

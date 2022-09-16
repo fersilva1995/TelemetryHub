@@ -1,0 +1,189 @@
+﻿.alarmList {
+    display: grid;
+    grid-template-columns: repeat(2, 31%);
+    margin: 0 1em;
+    column-gap: 0.3em;
+}
+
+.setAlarms, .getAlarms {
+    border-left: 2px solid black;
+    padding: 5px;
+}
+
+.tableAlarm {
+    border-collapse: collapse;
+    align-items: center;
+    align-content: center;
+}
+
+.tdtableAlarmContent {
+    height: 23px;
+}
+
+.buttonEditAlarm {
+    padding: 4px;
+    width: 100%;
+}
+
+
+.ComponentsOfAlarmDashboard {
+    display: none;
+}
+
+@media (max-width: 425px) {
+    .alarmList {
+        grid-column-gap: 0.5em;
+    }
+
+    .alarmSubtitle {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+/* ========================== */
+/* Edit Variable */
+
+.formEditVariable {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+/* Input Margins */
+
+.inputEditSN, .inputEditName, .inputEditAPU, .inputEditModule {
+    margin-left: 0.5em;
+}
+
+.inputEditSN {
+    width: 100px;
+}
+
+.inputEditName {
+    width: 205px;
+}
+
+.inputEditAPU {
+    width: 100px;
+}
+
+.inputEditModule {
+    width: 110px;
+}
+
+#variablesNameValue {
+   /* display: inline-flex;
+    flex-direction: column-reverse;*/
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+.titleVariableRow {
+    order: 1;
+    display: grid;
+    grid-template-columns: 13% 43% 42%;
+    grid-column-gap: 1em;
+    text-align: center;
+}
+
+.varInfo {
+    display: grid;
+    grid-template-columns: 13% 50% 34%;
+    grid-column-gap: 8px;
+    justify-items: center;
+    align-items: baseline;
+}
+
+.varLink {
+    background-color: dodgerblue;
+    color: white;
+    padding: 5px;
+    position: relative;
+    top: 3px;
+}
+
+.alarmLink {
+    color: white;
+    background-color: dodgerblue;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+@media (max-width: 480px) {
+    #variablesNameValue {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .titleVariableRow {
+        grid-template-columns: 18% 44%;
+        order: 0;
+    }
+
+    .varInfo {
+        display: grid;
+        grid-template-columns: 38% 48%;
+        margin-bottom: 2em;
+        grid-column-gap: 1em;
+    }
+
+    .alarmLink {
+        position: absolute;
+        left: 24px;
+    }
+}
+
+@media (max-width: 460px) {
+    .VariableId {
+        width: 160px;
+    }
+
+    .varLink {
+        white-space: nowrap;
+        left: 18px;
+    }
+}
+
+/* ================================ */
+/* Edit Alarm */
+
+.alarmIcon {
+    color: dodgerblue;
+    display: inline-block;
+    font-size: 13px;
+    margin-left: 3px;
+    position: relative;
+}
+
+.infoDiv {
+    position: fixed;   
+    -webkit-animation: fadeinout 4s linear forwards;
+    animation: fadeinout 6s linear forwards;
+}
+
+@-webkit-keyframes fadeinout {
+    0%,100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeinout {
+    0%,100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+
+
+.divAlarmRinging {
+    outline-style: solid;
+    outline-color: firebrick;
+}

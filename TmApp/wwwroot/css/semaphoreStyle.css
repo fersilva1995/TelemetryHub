@@ -1,0 +1,54 @@
+﻿.semaphoreComponentHeader {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -32px;
+}
+
+.semaphoreComponentChanger {
+    text-align: end;
+}
+
+.semaphoreIcons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    margin: -8px 8px;
+}
+
+.semaphoreTitle {
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.alarmSemaphore, .historySemaphore,
+.actionSemaphore, .actionReceiverSemaphore {
+    padding: 10px 0;
+}
+
+.semaphoreShow {
+    margin: 1px;
+}
+
+.varLabelSemaphore {
+    font-size: 1.8em;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.valueLabelSemaphore {
+    font-size: 1.3em;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.5px;
+
+    position: relative;
+    top: 5px;
+}
+
+.semaphoreHeaderOffDashboard {
+    position: relative;
+    top: -30px;
+}

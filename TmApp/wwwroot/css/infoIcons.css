@@ -1,0 +1,447 @@
+﻿.infoIcon:hover .homeTitleTxt, .infoIcon:hover .editTelemetryTxt, .infoIcon:hover .modulesTxt, .infoIcon:hover .titleTxt, .infoIcon:hover .titleConfigTxt,
+.infoIcon:hover .variableTxt, .infoIcon:hover .alarmVariableTxt, .infoIcon:hover .alarmListTxt, .alarmIcon:hover .tooltipAlarm, .infoIcon:hover .alarmActionTxt,
+.infoIcon:hover .panelTxt, .infoIcon:hover .showPanelTxt, .infoIcon:hover .dashboardTxt, .infoIcon:hover .addPopulatorTxt, .infoIconCnpj:hover .cnpjTxt,
+.infoIcon:hover .mapConfigTxt, .infoIcon:hover .alarmDashboardTxt, .infoIcon:hover .sendAlarmTxt, .infoIcon:hover .editActionTxt {
+    visibility: visible;
+}
+
+/* Home */
+
+.infoIcon .homeTitleTxt {
+    background-color: dodgerblue;
+    border-radius: 13px;
+    color: #fff;
+    left: -30px;
+    margin-left: -60px;
+    padding: 10px 0px;
+    position: absolute;
+    text-align: left;
+    padding-left: 10px;
+    top: 15px;
+    visibility: hidden;
+    width: 540px;
+    z-index: 1;
+    font-size: 0.9rem;
+    line-height: normal;
+    letter-spacing: 0.5px;
+}
+
+.infoIconCnpj {
+    color: dodgerblue;
+    display: inline-block;
+    font-size: 13px;
+    left: 452px;
+    position: relative;
+    top: 38px;
+}
+
+.infoIconCnpj .cnpjTxt {
+    background-color: dodgerblue;
+    border-radius: 13px;
+    color: #fff;
+    left: -60px;
+    margin-left: -60px;
+    padding: 10px 0px;
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    visibility: hidden;
+    width: 540px;
+    z-index: 1;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 830px) {
+    .infoIconCnpj {
+        left: 60px;
+        top: 94px;
+    }
+}
+
+@media (max-width: 768px) {
+    .infoIcon .homeTitleTxt {
+        width: 410px;
+        left: -54px;
+        top: 20px;
+    }
+
+    .infoIconCnpj{
+        left: 58px;
+        top:93px;
+    }
+}
+
+@media (max-width: 425px) {
+    .infoIcon .homeTitleTxt {
+        width: 300px;
+        left: -56px;
+        top: 19px;
+        letter-spacing: 0.6px;
+        line-height: 15px;
+    }
+}
+
+/* ======================= */
+
+/* Adicionar e Editar Telemetria */
+
+.infoIcon .editTelemetryTxt, .infoIcon .titleConfigTxt {
+    background-color: dodgerblue;
+    border-radius: 13px;
+    color: #fff;
+    left: -100px;
+    padding: 10px 0px;
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    visibility: hidden;
+    width: 350px;
+    z-index: 1;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.infoIcon .modulesTxt, .infoIcon .titleTxt {
+    background-color: dodgerblue;
+    border-radius: 13px;
+    color: #fff;
+    left: -60px;
+    margin-left: -70px;
+    padding: 10px 0px;
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    visibility: hidden;
+    width: 350px;
+    z-index: 1;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 600px) {
+    .infoIcon .modulesTxt, .infoIcon .titleConfigTxt {
+        width: 300px;
+        left: -185px;
+    }
+
+    .infoIcon .titleTxt {
+        width: 330px;
+        left: -250px;
+        top: 15px;
+    }
+}
+
+@media (max-width: 398px) {
+    .infoIcon .titleTxt {
+        width: 300px;
+        left: -130px;
+        top: 17px;
+    }
+}
+
+@media (max-width: 360px) {
+    .infoIcon .editTelemetryTxt {
+        width: 290px;
+        left: -95px;
+    }
+
+    .infoIcon .titleConfigTxt {
+        width: 220px;
+        left: -154px;
+    }
+}
+
+/* ======================= */
+
+/* Editar Variáveis */
+
+.alarmIcon .tooltipAlarm {
+    background-color: dodgerblue;
+    border-radius: 13px;
+    color: #fff;
+    left: 50%;
+    margin-left: -60px;
+    padding: 8px 0px;
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    visibility: hidden;
+    width: 285px;
+    z-index: 1;
+}
+
+.infoIcon .variableTxt {
+    background-color: dodgerblue;
+    border-radius: 13px;
+    color: #fff;
+    left: -100px;
+    padding: 10px 0px;
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    visibility: hidden;
+    width: 350px;
+    z-index: 1;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+    .alarmIcon .tooltipAlarm {
+        width: 245px;
+        height: 88px;
+        left: 0px;
+    }
+}
+
+@media (max-width: 570px) {
+    .infoIcon .variableTxt {
+        width: 304px;
+        left: -285px;
+    }
+}
+
+/* ======================= */
+
+/* Editar Alarmes */
+
+.infoIcon .alarmVariableTxt, .infoIcon .alarmListTxt {
+    background-color: dodgerblue;
+    border-radius: 13px;
+    color: #fff;
+    left: -100px;
+    padding: 10px 0px;
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    visibility: hidden;
+    width: 350px;
+    z-index: 1;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.infoIcon .alarmActionTxt {
+    background-color: firebrick;
+    border-radius: 13px;
+    color: #fff;
+    left: -100px;
+    padding: 10px 0px;
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    visibility: hidden;
+    width: 350px;
+    z-index: 1;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 530px) {
+    .infoIcon .alarmVariableTxt {
+        left: -240px;
+        width: 290px;
+    }
+
+    .infoIcon .alarmListTxt {
+        left: 0px;
+        width: 210px;
+    }
+
+    .infoIcon .alarmActionTxt {
+        left: 0px;
+        width: 210px;
+    }
+}
+
+/* ======================= */
+
+/* Configuração de Alarmes */
+
+.infoIcon .alarmDashboardTxt, .infoIcon .sendAlarmTxt {
+    background-color: dodgerblue;
+    border-radius: 13px;
+    color: #fff;
+    left: 50%;
+    margin-left: -56px;
+    padding: 7px 0px;
+    position: absolute;
+    text-align: center;
+    top: 146%;
+    visibility: hidden;
+    width: 320px;
+    z-index: 1;
+}
+
+@media (max-width: 991px) {
+    .infoIcon .sendAlarmTxt {
+        left: -250px;
+    }
+}
+
+@media (max-width: 425px) {
+    .infoIcon .alarmDashboardTxt {
+        width: 250px;
+        height: 39px;
+        left: -50px;
+    }
+
+    .infoIcon .sendAlarmTxt {
+        left: 75px;
+        top: -15px;
+        width: 280px;
+    }
+}
+
+/* ======================= */
+
+/* Painel */
+
+.infoIcon .panelTxt {
+    background-color: dodgerblue;
+    border-radius: 13px;
+    color: #fff;
+    left: -100px;
+    padding: 10px 0px;
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    visibility: hidden;
+    width: 240px;
+    z-index: 1;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+/* ======================= */
+
+/* Dashboard */
+
+.infoIcon .dashboardTxt {
+    background-color: dodgerblue;
+    border-radius: 13px;
+    color: #fff;
+    left: -60px;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    line-height: 1.5em;
+    padding: 10px 8px;
+    position: absolute;
+    text-align: initial;
+    top: 15px;
+    visibility: hidden;
+    width: 480px;
+    z-index: 1;
+}
+
+@media (max-width: 630px) {
+    .infoIcon .dashboardTxt {
+        left: -185px;
+        top: 20px;
+        width: 460px;
+    }
+}
+
+@media (max-width: 479px) {
+    .infoIcon .dashboardTxt {
+        left: -240px;
+        width: 300px;
+    }
+}
+
+/* ======================= */
+
+
+
+/* Apresentação */
+
+.infoIcon .showPanelTxt {
+    background-color: dodgerblue;
+    border-radius: 13px;
+    color: #fff;
+    left: -50px;
+    padding: 10px 0px;
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    visibility: hidden;
+    width: 240px;
+    z-index: 1;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+/* ======================= */
+
+/* População */
+
+.infoIcon .addPopulatorTxt {
+    background-color: dodgerblue;
+    border-radius: 13px;
+    color: #fff;
+    left: -50px;
+    padding: 10px 0px;
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    visibility: hidden;
+    width: 290px;
+    z-index: 1;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 630px) {
+    .infoIcon .addPopulatorTxt {
+        left: -185px;
+        top: 20px;
+    }
+}
+
+/* ======================= */
+
+/* Mapas */
+
+.infoIcon .mapConfigTxt {
+    background-color: dodgerblue;
+    border-radius: 13px;
+    color: #fff;
+    left: -151px;
+    padding: 10px 0px;
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    visibility: hidden;
+    width: 210px;
+    z-index: 1;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+/* ======================= */
+
+/* Ações */
+
+.infoIcon .editActionTxt {
+    background-color: dodgerblue;
+    border-radius: 13px;
+    color: #fff;
+    left: -81px;
+    padding: 10px 0px;
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    visibility: hidden;
+    width: 260px;
+    z-index: 1;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+@media(max-width: 830px) {
+    .infoIcon .editActionTxt {
+        left: -60px;
+        width: 250px;
+    }
+}

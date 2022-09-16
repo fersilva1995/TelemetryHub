@@ -1,0 +1,291 @@
+﻿/*Button Toogler CSS*/
+
+#toogleSlider {
+    display: none;
+}
+
+.labelToogler {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 45px;
+    height: 25px;
+    background-color: #e7e7e7;
+    border-radius: 25px;
+    position: relative;
+    transition: all .4s ease-out;
+}
+
+    .labelToogler:after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 15px;
+        height: 15px;
+        background-color: #1e90ff;
+        border-radius: 50%;
+        transition: all .4s ease-out;
+    }
+
+input:checked + .labelToogler {
+    background: #535353;
+}
+
+    input:checked + .labelToogler:after {
+        transform: translate3d(20px, 0, 0);
+        background-color: #fff;
+    }
+
+.toogler {
+    display: inherit;
+    align-items: baseline;
+}
+
+/* Class without dark-mode include */
+
+.dark-mode :root {
+    --lightblue: #86bad8;
+    --navy: #002c59;
+    --olive: #74c8a3;
+    --lime: #67ffa9;
+    --fuchsia: #f672d8;
+    --maroon: #ed6c9b;
+    --blue: #3f6791;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #e74c3c;
+    --orange: #fd7e14;
+    --yellow: #f39c12;
+    --green: #00bc8c;
+    --teal: #20c997;
+    --cyan: #3498db;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #3f6791;
+    --secondary: #6c757d;
+    --success: #00bc8c;
+    --info: #3498db;
+    --warning: #f39c12;
+    --danger: #e74c3c;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+/* Site */
+
+.dark-mode .collapible .active, .collapsible:hover {
+    color: black;
+}
+
+.dark-mode .form-control:disabled {
+    background-color: #606060 !important;
+    color: black !important;
+}
+
+/* Home */
+
+.dark-mode #loader {
+    background: #454d55a8 url('../Images/onda_nova.gif') no-repeat center center;
+}
+
+
+.dark-mode .navbar-white {
+    background-color: #454d55;
+}
+
+.dark-mode .main-header {
+    border: 1px solid #343a40;
+}
+
+.dark-mode .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.dark-mode .led-green {
+    box-shadow: rgb(0 0 0 / 20%) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #304701 0 2px 12px;
+}
+
+.dark-mode .icnTd {
+    color: #ffffffcf;
+}
+
+.dark-mode .VariableId, .dark-mode .PercentageId, .dark-mode .varButton, .dark-mode .varLink {
+    background-color: #343a40;
+    color: #fff;
+    border-color: #6c757d;
+}
+
+.dark-mode .inputSN:invalid {
+    border: 1px solid firebrick;
+}
+
+/* Histórico */
+
+.dark-mode .initialDay, .dark-mode .endDay, .dark-mode .initialHour,
+.dark-mode .endHour, .dark-mode .initialMin, .dark-mode .endMin,
+.dark-mode .initialSec, .dark-mode .endSec,
+.dark-mode .inputType.name, .dark-mode .divDateInputLocalLeft,
+.dark-mode .divDateInputLocalRight, .dark-mode .inputSelectedDateLocal,
+.dark-mode #valueHistoryCard, .dark-mode #graphicName {
+    background-color: #343a40;
+    color: #fff;
+    border: 1px solid #6c757d;
+}
+
+.dark-mode #graphicName::placeholder {
+    color: #ffffff51;
+}
+
+.dark-mode .initialDay::placeholder, .dark-mode .endDay::placeholder, .dark-mode .initialHour::placeholder,
+.dark-mode .endHour::placeholder, .dark-mode .initialMin::placeholder, .dark-mode .endMin::placeholder,
+.dark-mode .initialSec::placeholder, .dark-mode .endSec::placeholder, .dark-mode .inputType.name::placeholder {
+    color: #fff;
+}
+
+.dark-mode .arrowHover.history, .dark-mode .panelComponentSpan, 
+.dark-mode .arrowHover, .dark-mode .labelSelectedVariable {
+    color: black;
+}
+
+.dark-mode .historyIcon {
+    color: #fff;
+}
+
+.dark-mode .slider-container {
+    background-color: #393f45;
+}
+
+.dark-mode .slider {
+    background: #2562a3;
+}
+
+.dark-mode .mydivHistoryShow {
+    background-color: #454d55;
+    border: 1px solid #646f7a;
+}
+
+.dark-mode .d3-slider {
+    border: 1px solid #36393c;
+}
+
+.dark-mode .deleteWindownHistory {
+    background: inherit;
+}
+
+.dark-mode .mydivHistoryShowheader {
+    background: #6d9bcb;
+    color: black;
+}
+
+/* Alarmes */
+.dark-mode #conditionNumberValue, .dark-mode #begginingValue, .dark-mode #endingValue,
+.dark-mode #dateBegin1, .dark-mode #dateBegin2, .dark-mode #dateBegin3, .dark-mode #dateBegin4, .dark-mode #dateBegin5, .dark-mode #dateBegin6, .dark-mode #dateBegin7,
+.dark-mode #dateBeginMin1, .dark-mode #dateBeginMin2, .dark-mode #dateBeginMin3, .dark-mode #dateBeginMin4, .dark-mode #dateBeginMin5, .dark-mode #dateBeginMin6, .dark-mode #dateBeginMin7,
+.dark-mode #dateEnd1, .dark-mode #dateEnd2, .dark-mode #dateEnd3, .dark-mode #dateEnd4, .dark-mode #dateEnd5, .dark-mode #dateEnd6, .dark-mode #dateEnd7,
+.dark-mode #dateEndMin1, .dark-mode #dateEndMin2, .dark-mode #dateEndMin3, .dark-mode #dateEndMin4, .dark-mode #dateEndMin5, .dark-mode #dateEndMin6, .dark-mode #dateEndMin7,
+.dark-mode #emailReceiver, .dark-mode #smsReceiver, .dark-mode #alarmMultiplicator, .dark-mode #alarmConstant, .dark-mode #alarmUnit, .dark-mode #alarmHysteresis {
+    background-color: #343a40;
+    color: #fff;
+    border: 1px solid #6c757d;
+}
+    
+.dark-mode .arrowIcon {
+    color: #fff;
+}
+
+.dark-mode .infoWindowAlarm {
+    background-color: #454d55;
+}
+
+/* Usuários */
+
+.dark-mode .inputLogin:invalid, .dark-mode .inputPassword:invalid,
+.dark-mode .inputNickname:invalid, .dark-mode .inputCnpj:invalid, .dark-mode .inputCompany:invalid {
+    border: 1px solid firebrick;
+}
+
+.dark-mode .icnUserTable {
+    color: white;
+}
+/* Dashboard */
+
+.dark-mode .dashboardMenu {
+    color: #ffffffcf;
+}
+
+.dark-mode .panelSelection{
+    background-color: #454d55;
+    color: #F4F6F9;
+}
+
+.dark-mode .panelAlarmShow {
+    background-color: rgb(147,137,137);
+    color: #AF1D24;
+}
+
+.dark-mode .messageInfoDashboard {
+    color: black;
+}
+
+.dark-mode input[type="number"], .dark-mode input[type="text"] {
+    background-color: #343a40;
+    color: #fff;
+    border: 1px solid #6c757d;
+}
+
+.dark-mode .componentSelector {
+    background-color: #303030;
+}
+
+.dark-mode .bootstrap-switch {
+    border: 1px solid white;
+}
+
+
+/* Componentes */
+.dark-mode .ComponentNameTd {
+    color: black;
+}
+
+.dark-mode .fas fa-angle-down {
+    color: black;
+}
+
+.dark-mode .componentDetailsShow select,
+.dark-mode .PercentageId {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.dark-mode .componentDetailsShow label {
+    color: initial;
+}
+
+/* Mapas */
+
+.dark-mode .checkedLayer {
+    background-color: #454d55;
+    border: 1px solid white;
+    color: white;
+}
+
+.dark-mode .uncheckedLayer {
+    border: 1px solid white;
+}
+
+.dark-mode .firstHeading {
+    color: black;
+}
+
+.dark-mode .infoPositionBox {
+    color: black;
+}
+
+.dark-mode .createLayers input, .dark-mode .editLayers input {
+    background-color: #343a40;
+    color: #fff;
+    border: 1px solid #6c757d;
+}

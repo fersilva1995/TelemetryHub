@@ -1,0 +1,74 @@
+﻿.vertBarHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.vertBarTitle {
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.verBarChanger {
+    text-align: end;
+}
+
+.vertBarIcons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    margin: 34px 8px;
+}
+
+.vertBarAlarm, .vertBarHistory, .vertBarAction, .vertBarActionReceiver {
+    padding: 6px 0;
+}
+
+.vertBarMaximumValue {
+    position: relative;
+    left: 108px;
+    top: -1px;
+}
+
+.vertBarMinimumValue {
+    position: relative;
+    left: 108px;
+    top: 58px;
+}
+
+
+.column-wrapperVertical {
+    height: 130px;
+    width: 22px;
+    background: #cfd8dc;
+    transform: rotate(180deg);
+    margin: 0 0 0 110px;
+    margin-bottom: -55px;
+}
+
+.columnVertical {
+    width: 22px;
+    height: 0%;
+    background: #90a4ae;
+}
+
+.vertBarValue {
+    position: relative;
+    font-size: 34px;
+    top: -80px;
+    left: 150px;
+}
+
+.vertBarUnit {
+    position: relative;
+    font-size: 25px;
+    top: -85px;
+    left: 155px;
+    text-align: end;
+}
+
+.vertBarHeaderOffDashboard {
+    position: relative;
+    top: -55px;
+}

@@ -1,0 +1,253 @@
+﻿.devicesHome {
+    text-align: center;
+    width: 100%;
+}
+
+.slots {
+    margin-left: 10px;
+}
+
+.telemetryCreate {
+    float: right;
+    margin-right: 10px;
+    margin-top: -68px;
+    width: 40%;
+}
+
+@media (max-width: 768px) {
+    .iconsHome {
+        display: flex;
+        column-gap: 3px;
+        margin: 0 7px;
+    }
+}
+
+@media (max-width: 500px) {
+    .deviceUser {
+        display: none;
+    }
+
+    .ledShow {
+        display: flex;
+        column-gap: 2px;
+    }
+}
+
+@media (max-width: 425px) {
+    .btnCreate {
+        display: flex;
+        justify-content: center;
+    }
+
+    .telemetryCreate {
+        width: 63%;
+        height: 1%;
+        margin-top: -5px;
+        margin-bottom: 20px;
+    }
+
+    .telemetryName {
+        font-size: 14px;
+    }
+}
+
+/* Adicionar e Editar Telemetria */
+
+.formAddTelemetry,
+.formEditTelemetry {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.formDesc,
+.formDescEdit {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    grid-column-gap: 1em;
+    justify-content: flex-start;
+    line-height: 2;
+}
+
+.labelUser,
+.labelEdit {
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.labelAPU {
+    display: none;
+}
+
+/* Input Margins */
+
+.inputSN, .inputName, .inputAPU, .inputCPU, .inputDesc, .inputUser {
+    margin-left: 1em;
+}
+    .inputSN:invalid{
+        border-color: firebrick;
+    }
+/* Inputs Widths */
+
+.inputSN {
+    width: 100px;
+}
+
+.inputName {
+    width: 230px;
+}
+
+.inputAPU {
+    width: calc(28vh - 7px);
+    display: none;
+}
+
+.inputCPU {
+    width: 90px;
+    text-transform: uppercase;
+}
+
+.inputDesc {
+    width: 90px;
+    text-transform: uppercase;
+}
+
+.inputUser {
+    width: 150px;
+}
+
+.formSelectUser {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin: 2em 1em;
+}
+
+.btnConfirm {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1.5em;
+}
+
+.btnVariableEdit {
+    margin-top: 1em;
+    margin-left: 1.5em;
+}
+
+.btnAdd,
+.btnEdit {
+    margin: 0 10px;
+}
+
+.btnVarEdit {
+    margin: 0 1.5em;
+    width: 50%;
+    background-color: seagreen;
+}
+
+@media (max-width: 992px) {
+    .formAddTelemetry,
+    .formEditTelemetry {
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        line-height: 2;
+    }
+
+    .formDesc,
+    .formDescEdit {
+        display: grid;
+        grid-template-columns: repeat(4, 23%);
+        line-height: 2;
+    }
+
+    .formSelectUser {
+        margin: 0;
+    }
+
+    .form-control {
+        width: 95%;
+        margin-left: 0;
+        margin-bottom: 0.5em;
+    }
+
+    .inputCPU, .inputDesc {
+        margin-left: 0;
+    }
+
+    .inputUser {
+        width: 150px;
+    }
+
+    .inputSN, .inputName {
+        margin-left: 1em;
+        width: 250px;
+    }
+
+    .labelSelect {
+        margin: 0 1em;
+    }
+
+    .btnConfirm {
+        justify-content: center;
+    }
+
+    .btnVariableEdit {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .formAddTelemetry,
+    .formEditTelemetry {
+        display: grid;
+        grid-template-columns: 43% 56%;
+        line-height: 2;
+    }
+
+    .formDesc,
+    .formDescEdit {
+        display: grid;
+        grid-template-columns: repeat(2, 46%);
+        line-height: 2;
+    }
+
+    .inputCPU, .inputDesc {
+        width: 95%;
+        margin-left: 0;
+    }
+
+    .inputSN, .inputName {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .labelUser {
+        font-size: 15px;
+    }
+}
+
+/* Detalhes e Remover Telemetria */
+
+.detailsTelemetry {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-column-gap: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.detailsModules {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    grid-column-gap: 2em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.btnDelete {
+    background-color: firebrick;
+    margin: 0 10px;
+}

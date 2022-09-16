@@ -1,0 +1,416 @@
+﻿.pageTitle {
+    margin-bottom: 0.5em;
+}
+
+.form-user {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin: 1em 0;
+}
+
+
+.userTrash{
+    cursor:unset;
+    color:lightslategrey;
+}
+
+.form-userInfo {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    align-items: baseline;
+    margin: 0.5em 0;
+}
+
+.form-userInfos {
+    display: grid;
+    grid-template-columns: 75px 75px 125px 125px 60px 150px 45px 10px;
+    align-items: baseline;
+    margin: 0.5em 0;
+}
+
+.form-userInfoState {
+    display: grid;
+    grid-template-columns: 70px 200px 70px 250px 60px 140px;
+    align-items: baseline;
+    margin: 0.5em 0;
+}
+
+.label-user {
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.form-control.inputLogin, .form-control.inputNickname {
+    width: 140px;
+}
+
+.form-control.inputPassword {
+    width: 110px;
+}
+
+.form-control.inputCompany {
+    width: 340px;
+    margin-bottom: 0.3em;
+    text-transform: uppercase;
+}
+
+.form-control.inputAdress {
+    text-transform: capitalize;
+    width: 220px;
+}
+
+.form-control.inputAdressNum {
+    width: 70px;
+}
+
+.form-control.inputRegion {
+    width: 150px;
+}
+
+.form-control.inputComplement {
+    text-transform: capitalize;
+    width: 120px;
+}
+
+.form-control.inputCep {
+    width: 100px;
+}
+
+.form-control.inputContactName {
+    width: 150px;
+}
+
+.form-control.inputContactNum {
+    width: 110px;
+}
+
+.form-control.inputContactDDD{
+    width: 50px;
+}
+
+.form-control.inputEmail {
+    width: 230px;
+}
+
+.form-control.inputLogin, .form-control.inputPassword, .form-control.inputNickname,
+.form-control.inputCompany, .form-control.inputAdress, .form-control.inputAdressNum,
+.form-control.inputRegion, .form-control.inputComplement, .form-control.inputCep,
+.form-control.inputContactName, .form-control.inputContactDDD, .form-control.inputContactNum,
+.form-control.inputEmail {
+    margin-left: 0.5em;
+}
+
+.telemetryUser, .userTree {
+    margin: 0px 1em;
+    text-align: center;
+}
+
+.tableMob, .tableUserMob, .iconsMobUserTableTwo {
+    display: none;
+}
+
+.icnTable {
+    width: 16px;
+}
+
+#editButton, #deleteButton, #createButton, .btnEdit {
+    margin: 0 1.5em;
+}
+.userBtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
+
+/** Media Queries **/
+
+@media (max-width: 830px) {
+    .form-userInfo, .form-userInfos, .form-userInfoState {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-user {
+    flex-direction: column;
+    }
+
+    .label-user {
+        margin-bottom: 0;
+    }
+
+    .form-control.inputLogin, .form-control.inputPassword, .form-control.inputNickname,
+    .form-control.inputCompany, .form-control.inputAdress, .form-control.inputAdressNum,
+    .form-control.inputRegion, .form-control.inputComplement, .form-control.inputCep,
+    .form-control.inputContactName, .form-control.inputContactNum, .form-control.inputEmail {
+        width: 95%;
+    }
+
+    .telemetryUser, .userTree {
+        display: none;
+    }
+
+    .tableMob, .tableUserMob {
+        display: inline-table;
+        line-height: 1.5;
+        margin: 0 0.5em;
+    }
+
+    .iconsMob, .iconsUserMob, .iconsMobUserTableTwo {
+        display: none;
+    }
+
+    .userTelemetry {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .privilege {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .slt {
+        display: none;
+    }
+
+    .userBtn {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .sltTwo {
+        display: none;
+    }
+}
+
+@media (max-width: 365px) {
+    .iconsTable, .iconsUserTable, .iconsMobUserTable {
+        display: none;
+    }
+
+    .iconsMob, .iconsUserMob, .iconsMobUserTableTwo {
+        display: inherit;
+    }
+}
+
+/* =================================================== */
+/* Usuários */
+
+.usersActive {
+    text-align: center;
+    width: 100%;
+}
+
+.userCreate {
+    float: right;
+    margin-right: 10px;
+    margin-top: -68px;
+    width: 40%;
+}
+
+/* Media Queries */
+
+@media (max-width: 500px) {
+    .userCnpj {
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    .userNickname {
+        display: none;
+    }
+
+    .btnUserCreate {
+        display: flex;
+        justify-content: center;
+    }
+
+    .userCreate {
+        width: 63%;
+        height: 1%;
+        margin-top: -5px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Edit Usuario */
+
+.form-checkbox {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-column-gap: 10px;
+}
+
+.btnAlert {
+    background-color: seagreen;
+    margin: 0 1.5em;
+    max-width: 240px;
+}
+
+.dispMob {
+    display: none;
+}
+
+@media (max-width: 830px) {
+    .btnAlert {
+        width: 231px;
+    }
+
+    .dispDesk{
+        display: none;
+    }
+
+    .dispMob {
+        display: inherit;
+        position: relative;
+        left: 0.5em;
+    }
+
+    .alertChannelBtn {
+        display: flex;
+        justify-content: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+} 
+
+/* ============================== */
+
+/* Detalhes de Usuário */
+
+.form-userDetails {
+    display: grid;
+    /*grid-template-columns: repeat(4, max-content);*/
+    grid-template-columns: 155px 240px 150px 250px;
+    align-items: baseline;
+    margin: 0.5em 0;
+}
+
+.form-control.inputInscEst, .form-control.inputInscMun, 
+.form-control.inputRegionDetails {
+    width: 150px;
+    margin-left: 0.5em;
+}
+
+.form-control.inputAdressDetails, .form-control.inputCityDetails {
+    width: 340px;
+    margin-left: 0.5em;
+}
+
+.form-control.inputCnpj {
+    width: 150px;
+}
+
+.form-control.inputState {
+    width: 190px;
+    margin-left: 0.5em;
+}
+
+.form-control.inputCity {
+    width: 250px;
+    margin-left: 0.5em;
+}
+
+@media(max-width: 830px) {
+    .form-userDetails {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-control.inputCnpj , .form-control.inputInscEst, .form-control.inputInscMun, .form-control.inputCity, 
+    .form-control.inputState, .form-control.inputRegionDetails, .form-control.inputAdressDetails, .form-control.inputCityDetails {
+        width: 95%;
+    }
+}
+
+.alarmsChecker{
+    position: fixed;
+    display: none;
+}
+
+
+/* Criar Usuário */
+.form-control.inputCreate {
+    width: 95%;
+    margin: 0 1em;
+}
+
+.inputLogin:invalid, .inputPassword:invalid, .inputNickname:invalid,
+.inputCnpj:invalid, .inputCompany:invalid {
+    border: 1px solid firebrick;
+}
+
+@media (max-width: 830px) {
+    .form-control.inputCreate {
+        margin-left: 0.5em;
+    }
+}
+
+.messsageLabelUser {
+    -webkit-animation: fadeinout 4s linear forwards;
+}
+
+
+/* Usuário Simples */
+
+.simpleUsertHead, .simpleUsertBody {
+    text-align: center;
+}
+
+.icnUserTable {
+    border: none;
+    background: none;
+    color: dodgerblue;
+}
+
+.userSimpleCreate {
+    background: dodgerblue;
+    border-radius: 5px;
+    color: white;
+    float: right;
+    margin-top: -58px;
+    margin-right: 10px;
+    padding: 5px;
+    text-align: center;
+    width: 200px;
+}
+
+.simplePanelArea {
+    display: grid;
+    grid-template-columns: repeat(2, 31%);
+    margin: 0 1em;
+    column-gap: 0.3em;
+}
+
+#avaiblePanels, #selectedPanels {
+    border-left: 2px solid black;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+@media(max-width: 512px) {
+    .btnSimpleCreate {
+        display: flex;
+        justify-content: center;
+    }
+
+    .userSimpleCreate {
+        margin-top: -10px;
+        margin-bottom: 1em;
+    }
+
+}
+
+@media(max-width: 384px) {
+    .simplePanelArea {
+        grid-template-columns: repeat(2, 45%);
+    }
+}

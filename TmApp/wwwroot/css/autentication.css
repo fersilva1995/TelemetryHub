@@ -1,0 +1,167 @@
+﻿/* Login */
+
+.boxLogin {
+    width: 30%;
+    margin: 5em auto 0px auto;
+}
+
+.imgLogin {
+    max-width: 100%;
+}
+
+.pngLogo {
+    width: 300px;
+    margin-left: 32px;
+}
+
+.siteLink {
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+.siteLink:hover {
+    text-decoration: none;
+    color: #004a99;
+    cursor: pointer;
+}
+
+.footerLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+@media (max-width: 992px) {
+    .boxLogin {
+        width: 300px;
+        margin: 5em auto 0px auto;
+    }
+}
+
+/* Criar usuário */
+
+input::placeholder {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+}
+
+.label-createUser {
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.form-createAcess, .form-createContact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+/* Inputs with required itens*/
+
+.inputCreateLogin:invalid, .inputCreatePassword:invalid, .inputCreateNickname:invalid,
+.inputCreateCNPJ:invalid, .inputCreateMainName:invalid, .inputCreateCNPJ:invalid {
+    border: 1px solid firebrick;
+}
+
+/* Forms inputs */
+
+.inputCreateLogin, .inputCreatePassword, .inputCreateNickname {
+    width: 150px;
+}
+
+
+.form-createUser {
+    display: grid;
+    align-items: baseline;
+    grid-template-columns: repeat(4, max-content);
+}
+
+.inputCreateMainName, .inputCreateAddress {
+    width: 340px;
+}
+
+.inputCreateCNPJ, .inputCreateInscEst, .inputCreateInscMun, .inputCreateComplement {
+    width: 180px;
+}
+
+.inputCreateRegion {
+    width: 300px;
+}
+
+.inputCreateCity {
+    width: 300px;
+}
+
+.inputCreateNumber {
+    width: 100px;
+}
+
+.inputCreateCEP {
+    width: 100px;
+}
+
+.inputCreateState {
+    width: 160px;
+}
+
+.inputCreateContactName {
+    width: 150px;
+}
+
+.inputCreateDDD {
+    width: 50px;
+}
+
+.inputCreateContactPhone {
+    width: 100px;
+}
+
+.inputCreateContactEmail {
+    width: 200px;
+}
+
+.inputCreateLogin, .inputCreatePassword, .inputCreateNickname, .inputCreateMainName, .inputCreateCNPJ,
+.inputCreateInscMun, .inputCreateInscEst, .inputCreateAddress, .inputCreateNumber, .inputCreateComplement,
+.inputCreateRegion, .inputCreateCity, .inputCreateState, .inputCreateCEP, .inputCreateContactName,
+.inputCreateDDD, .inputCreateContactPhone, .inputCreateContactEmail {
+    margin-left: 0.5em;
+}
+
+.form-createCheckbox {
+    display: flex;
+    margin: 1em;
+    letter-spacing: 0.7px;
+}
+
+.textCheckbox {
+    margin-left: 0.5em;
+    margin-right: 8em;
+}
+
+.createBtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+#registerButton {
+    margin: 0 1.5em;
+}
+
+@media (max-width: 1049px) {
+    .form-createAcess, .form-createUser, .form-createContact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .label-createUser {
+        margin-bottom: 5px;
+    }
+
+    .inputCreateLogin, .inputCreatePassword, .inputCreateNickname, .inputCreateMainName, .inputCreateCNPJ,
+    .inputCreateInscMun, .inputCreateInscEst, .inputCreateAddress, .inputCreateNumber, .inputCreateComplement,
+    .inputCreateRegion, .inputCreateCity, .inputCreateState, .inputCreateCEP, .inputCreateContactName,
+    .inputCreateDDD, .inputCreateContactPhone, .inputCreateContactEmail {
+        width: 90%;
+    }
+}
